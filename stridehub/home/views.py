@@ -1,6 +1,4 @@
-from django.shortcuts import render
-
-# Create your views here.
+from django.http import JsonResponse
 
 def home_view(request):
-    return render(request, 'home/home.html')
+    return JsonResponse({"message": "Welcome to the StrideHub Performance Review Portal API"})
