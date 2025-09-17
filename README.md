@@ -9,5 +9,10 @@ Sept 16th
 CORS_ALLOW_ALL_ORIGINS = True
 4. Installing NVM - node version manager that helps to swirch and manage differnet node versions
 ![alt text](image.png)
+Note:
+Node Version: v22.19.0
+NPM version: v10.9.3
+NVM Version: 0.39.7
+
 
 
