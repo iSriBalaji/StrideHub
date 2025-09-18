@@ -1,0 +1,65 @@
+Research Notes:
+Performance Review  -PSUEDO CODE
+
+Big consultancy - performance review
+Hear Stories(inputs):
+	WITHIN EACH PROJECT(as a consultant will be in different projects)
+	FOR EACH ENGAGEMENT OR SPRINT(eg kofc is 1 month sprint)
+	DO THIS
+	(need to select the appropriate client members and the internal team members to provide details)
+	- CLIENT feedbacks[Delivery to the team](i think this is most important in consulting projects)
+		> this can only be aquired by specific people - Enagement managers or who directly in contact with the clients side
+	- INTERNAL TEAM(internal peer assessment)[Contribution to the team] - what they think or observe about the candidate
+	(example - last year Brian asked Adam and Cheyy to provide feedback to each other)
+
+	FOR EACH DOCUMENT WHAT HAS BEEN CONTRIBUTED
+		- what work has been done for the client or in the project
+
+	FOR EACH IN ABOVE MEASURE
+		(next steps)
+		what can they share? - STORIES
+		- inspiring or positive stories - ex: venkata's stopping depployment to avoid redeployment due to errors
+		- measurable outcomes[VALUES_ADDED] - technically advanced in solving problems[problem_solving_1], guiding a team or directing them[driving_2](ex: Brian drive/manage the CRM domain in kofc), analytical and provide insights[analytical_3] speaking up whereever needed[effective_communication_4], client management and engagement[relationships_5](eg: Raman managing and driving things), taking responsibility and accountabiliy[ownership_6], teamwork, new ideas sharing and business dev[ideas_insigts] OR the NOT(version of all in this point)
+
+	AT END OF EACH PROJECT
+		need to have a discussion with the project manager or main manager to get insights and log them
+
+	WITH ALL THE STORIES AND CATEGORIES MEASURES
+	MAP THEM TO THE VALUES OF THE COMPANY - 5 values
+
+
+Features:
+Auto extract the billable hours for each project
+Compare billable goals to personal set goal
+Have graph on how much contribution has been done on the Values side - Data Viz
+Certification done in that specific year
+Cutshort reviews to the specific details - AI LLM can be utilized
+
+
+Internal Features:
+compare teams rating and make sure all team managers provided fair ratings
+Pair with mentors - talking with them and get insights
+
+First thing is logging, - anyone can log the stories - engagement managers or managers or team mates
+
+
+
+Philosophy:
+Every work is recognized and appreciated
+Being transparent and Every mistake can be noted or reach the candidate to take steps on areas of growth - many times we never even know we are doing it
+Being genuine and honest in recogniztion and appreciation
+
+
+Observations:
+We measure performance and success based on the company values - How it aligns with each categories - Here measure success using the company values as well
+We do one major review per year - consolidation all projects, stories and progress
+Also only the employee says that - what are the things have done and things like that - we are not noting or tracking details of others giving details on the employee
+we use 360 degree review - read that email for further details
+
+
+Problems:
+we will forget many important details or stories when we do one year once - unless people are noting and taking notes on it - we have more details on the latest project and the details on the old ones could be missed out(missing the frequent touchpoint and tracking them - documented)
+we are not noting or tracking details of others giving details on the employee
+
+
+
