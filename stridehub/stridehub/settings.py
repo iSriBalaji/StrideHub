@@ -37,10 +37,47 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'home',
+    'home.apps.HomeConfig',  # changed from 'home'
     'rest_framework',
     'corsheaders',
 ]
+
+# Make drf-spectacular optional
+try:
+    import drf_spectacular  # noqa: F401
+    _DRF_SPECTACULAR_AVAILABLE = True
+    INSTALLED_APPS.append('drf_spectacular')
+except ImportError:
+    _DRF_SPECTACULAR_AVAILABLE = False
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ],
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+        'rest_framework.renderers.BrowsableAPIRenderer',
+    ],
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 50,
+}
+
+if _DRF_SPECTACULAR_AVAILABLE:
+    # Only set schema class if the package is available
+    REST_FRAMEWORK.setdefault(
+        'DEFAULT_SCHEMA_CLASS',
+        'drf_spectacular.openapi.AutoSchema'
+    )
+    SPECTACULAR_SETTINGS = {
+        'TITLE': 'StrideHub API',
+        'DESCRIPTION': 'API documentation for StrideHub.',
+        'VERSION': '1.0.0',
+        'SERVE_URLCONF': 'stridehub.urls',  # ensure correct root scanning
+        # 'SCHEMA_PATH_PREFIX': r'/api',  # optional: limit schema to /api paths
+    }
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
